@@ -20,7 +20,6 @@ As readability is one of the characteristic for easy interpretation of data, I h
 Categorical and ordinal
 
 ### Script
-
 #### The flow of the script
 1. Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
 1. Step 2: Merges data:
@@ -54,13 +53,15 @@ Categorical and ordinal
 		Write this final tidy data set to a text file; final.txt.
 
 
-#### Environment details:
-1. Mac: OS X 10.9.2
-2. R: version 3.0.2
-3. Platform: x86_64-apple-darwin10.8.0 (64-bit)
+#### Environment details
+Environment in which script has been developed, executed and verified.
 
-### Verification
-This script has been run under different location (folders) to ensure it provides the same results; the same set of tidy data set.
-Also, executed every single line of command/block of command separately on R console and even this produced the same results. 
-This script has been run with and without data folder; the average time take without "data" folder and zip file is "45" secs and with it takes around "15" secs.
+* Mac: OS X 10.9.2
+* R: version 3.0.2
+* Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+#### Verification
+* This script has been run under different location (folders) to ensure it provides the same results; the same set of tidy data set.
+* Also, executed every single line of command/block of command separately on R console and even this produced the same results. 
+* This script has been run with and without data folder; the average time take without "data" folder and zip file is "45" secs and with it takes around "15" secs.
 

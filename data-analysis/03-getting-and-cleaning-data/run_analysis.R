@@ -93,16 +93,16 @@ variable_name_replacements <- function(x) {
 	tmpcolnames <- gsub("\\(\\)","",tmpcolnames)
 	tmpcolnames <- gsub("std","standarddeviation",tmpcolnames)
 
-        ### 1. Convert all variable names to lowercase.
+	## 1. Convert all variable names to lowercase.
 	#tmpcolnames <- gsub("-","",tmpcolnames)
         
-	### 2. Convert all varible names to camelCase.
+	## 2. Convert all varible names to camelCase.
 	## This will replace "-" and every character after "-", to Upper case of that character. 
-        ## E.g. time-time -> timeTime.
+	## E.g. time-time -> timeTime.
 	#tmpcolnames <- gsub("-([^ ])", "\\U\\1", tmpcolnames, perl=TRUE) 
         
 	## Not applying any of the above 2 techniques for now (lowercase or camelCase), 
-        ## for better readbility retaining "-" in the variable.
+	## for better readbility retaining "-" in the variable.
 
 	tmpcolnames
 }
@@ -139,7 +139,7 @@ rm(all_data)
 ##=========================================## 
 activities <- read.table("activity_labels.txt")
 colnames(activities) <- c("activityId","activity") 
-jn <- arrange(join(activities,sliced_data),activityId)
+with_activities <- arrange(join(activities,sliced_data),activityId)
 
 ## cleaning up the unwanted variables
 rm(activities)
@@ -148,7 +148,7 @@ rm(sliced_data)
 ##=========================================## 
 ## 4. Descriptive variable names
 ##=========================================##
-colnames(jn) <- variable_name_replacements(jn)
+colnames(with_activities) <- variable_name_replacements(with_activities)
 
 ##=========================================## 
 ## 5. independent tidy data set 
@@ -157,16 +157,22 @@ colnames(jn) <- variable_name_replacements(jn)
 ##=========================================## 
 ## to retain the same order of activityId, perform melt and dcast with activityId
 ## after dcast is complete, extract final data excluding activityId
-dataMelt <- melt(jn,id=c("activityId","activity","subject"))
+dataMelt <- melt(with_activities,id=c("activityId","activity","subject"))
 subActData <- dcast(dataMelt, activityId + activity + subject ~ variable,mean)
 final <- subActData[,2:length(subActData)]
 
+## cleaning up the unwanted variables
+rm(with_activities)
+rm(dataMelt)
+rm(subActData)
+
 ## Write it to a text file.
+setwd("../..")
 write.table(final,file="final.txt",row.names=FALSE, col.names=TRUE, sep="\t", quote=FALSE)
 
 ############################################# 
 ##      End of the script - cleanup        ##
 ############################################# 
-rm(list=ls())
+#rm(list=ls())
 
 ########################################################################
