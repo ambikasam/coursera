@@ -15,14 +15,16 @@ Tidy data set
 2. Then, each row represents each "subject and acitivity" combination and for each of these combination, mean is computed for every variable.
 3. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
 ```S
-For example 1: 
-lowercase: frequencybodygyroscopejerkmagnitudestandarddeviation, 
-camelCase: frequencyBodyGyroscopeJerkmagnitudeStandarddeviation, 
-dash     : frequency-body-gyroscope-jerkmagnitude-standarddeviation.
+For example 1:
+lowercase: frequencybodygyroscopejerkmagnitudestandarddeviation
+camelCase: frequencyBodyGyroscopeJerkmagnitudeStandarddeviation
+dash     : frequency-body-gyroscope-jerkmagnitude-standarddeviation
+
 For example 2: 
-lowercase: frequencybodyaccelerometerjerkstandarddeviationY, 
-lowercase: frequencyBodyAccelerometerJerkStandarddeviationY, 
-dash     : frequency-body-accelerometer-jerk-standarddeviation-Y. 
+lowercase: frequencybodyaccelerometerjerkstandarddeviationY
+camelCase: frequencyBodyAccelerometerJerkStandarddeviationY
+dash     : frequency-body-accelerometer-jerk-standarddeviation-Y 
+
 As readability is one of the characteristic for easy interpretation of data, 
 I have considered this characteristic for variable names
 ```
