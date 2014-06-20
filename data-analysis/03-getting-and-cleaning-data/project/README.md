@@ -49,7 +49,7 @@ I have considered this characteristic for variable names
 Code book
 ===========
 The variables are of 2 types in this tidy data set: Categorical and ordinal.  
-Please refer to [coodebook.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/codebook.md) for more info. 
+Please refer to [coodebook.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/codebook.md) for more info. 
 
 
 Script
