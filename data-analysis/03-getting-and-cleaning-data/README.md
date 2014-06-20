@@ -7,7 +7,9 @@ In the process of getting and cleaning data, there are several other files:
 2. A code book: Describing each variable and its values in the tidy data set. File: codebook.md
 3. Script to generate the tidy data set from scratch. File: run_analysis.R
 
-### Tidy data set
+Tidy data set
+===========
+
 1. Tidy data set has a row with column names - subject, activity and the other 66 variable names.
 2. Then, each row represents each "subject and acitivity" combination and for each of these combination, mean is computed for every variable.
 3. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
@@ -18,10 +20,13 @@ In the process of getting and cleaning data, there are several other files:
 ```
 4. Better readibility of entire data: Also, this file can be opened with "MS Excel". This displays data in tabular format and thus making it better to read the data than opening it in any of the text pads.
 
-### Code book
+Code book
+===========
 Categorical and ordinal
 
-### Script
+Script
+===========
+
 #### The flow of the script
 1. Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
 1. Step 2: Merges data:
