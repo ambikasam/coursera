@@ -41,8 +41,8 @@ Script
 ```R
 Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net and unzip it under data folder.
 Step 2: Merges data:
-      a. Test data: Under test folder, subject_test, y_test & X_test text files merged into "test_data" data frame.
-      b. Train data: Under train folder, subject_train, y_train & X_train text files merged into "train_data" data frame.
+      a. Test:  Under test  folder, subject_test,  y_test  & X_test  text files merged into "test_data"  data frame.
+      b. Train: Under train folder, subject_train, y_train & X_train text files merged into "train_data" data frame.
       c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame.
 Step 3: Column names: 
       Assign column names to this "all_data". 
