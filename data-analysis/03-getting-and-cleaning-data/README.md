@@ -41,8 +41,8 @@ Script
 ```S
 Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
 Step 2: Merges data:
-      a. Test data: Under "test" folder, "subject_test", "y_test" and "X_test" data merged into "test_data" data frame.
-      b. Train data: Under "train" folder, "subject_train", "y_train" and "X_train" data merged into "train_data" data frame.
+      a. Test data: Under test folder, subject_test, y_test and X_test text files merged into "test_data" data frame.
+      b. Train data: Under train folder, subject_train, y_train and X_train text files merged into "train_data" data frame.
       c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame.
 Step 3: Column names: 
       Assign column names to this "all_data". 
@@ -53,19 +53,19 @@ Step 4: Extract columns:
       The "sliced_data" will contain this data.
 Step 5: Descriptive activities: 
       After this, assign descriptive names for each Activity. 
-      Join "slice_data" and "activity" on "activityId" and get "with_activities" data.
-      "activity" column will now have the descriptive activities.
+      Join "slice_data" and "activity" on 'activityId' and get "with_activities" data.
+      'activity' column will now have the descriptive activities.
       Here, one more column "activity" is added. So, the total columns are 69. 
 Step 6: Descritpvie variables: 
       Next, assign descriptive names for the variables. 
       This is achieved by replacing the short names to more descriptive ones and 
       also by eliminating repeated words or characters, paranthesis (), etc.
 Step 7: Calculate mean: 
-      For the keys "activityId, activity, subject", get the mean for each variable. 
-      With "melt" and "dcast" functions, obtain this set of data. 
+      For the keys 'activityId, activity, subject', get the mean for each variable. 
+      With 'melt' and 'dcast' functions, obtain this set of data. 
       Now, there are 180 rows (combi: 6 activities * 30 subjects = 180 rows) and 69 columns.
 Step 8: Final tidy data set: 
-      Eliminate "activityId" and take the rest of the data. 
+      Eliminate 'activityId' and take the rest of the data. 
       This is the final tidy data set. Now, we have 180 rows and 68 columns.
 Step 9: Write to file: 
       Write this final tidy data set to a text file; final.txt.
