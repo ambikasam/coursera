@@ -41,19 +41,19 @@ Script
 ```S
 Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
 Step 2: Merges data:
-      a. Test data: Under test folder, subject_test, y_test and X_test data merged into test_data data frame.
-      b. Train data: Under train folder, subject_train, y_train and X_train data merged into train_data data frame.
-      c. Then, merge test_data and train_data data frame into all_data data frame.
+      a. Test data: Under "test" folder, "subject_test", "y_test" and "X_test" data merged into "test_data" data frame.
+      b. Train data: Under "train" folder, "subject_train", "y_train" and "X_train" data merged into "train_data" data frame.
+      c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame.
 Step 3: Column names: 
-      Assign column names to this all_data. 
+      Assign column names to this "all_data". 
       Column names are subject, activityId and the 561 values in features.txt. So, totally 563 columns.
 Step 4: Extract columns: 
       Now, of the 561 columns, extract columns with mean and standard deviation only. 
       This amounts to 66 columns (from 561 columns). Plus subject and activity 2 columns, makes it 68 columns. 
-      The sliced_data will contain this data.
+      The "sliced_data" will contain this data.
 Step 5: Descriptive activities: 
       After this, assign descriptive names for each Activity. 
-      Join slice_data and activity on activityId and form with_activities data.
+      Join "slice_data" and "activity" on "activityId" and get "with_activities" data.
       "activity" column will now have the descriptive activities.
       Here, one more column "activity" is added. So, the total columns are 69. 
 Step 6: Descritpvie variables: 
