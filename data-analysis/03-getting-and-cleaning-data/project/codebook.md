@@ -1,7 +1,8 @@
-code book for getting and cleaning data excersise
+Code book for getting and cleaning data excersise
 ==========
 
-### Variables and Features mapping
+Variables and Features
+==========
 #### Features selection details:
 ```R
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
@@ -32,7 +33,8 @@ axials(X/Y/Z)
 [Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
 
 
-### Variables details
+Variables details
+==========
 
 activity  
 subject  
