@@ -1,7 +1,8 @@
 code book for getting and cleaning data excersise
 ==========
 
-### Features selection details:
+### Variables and Features mapping
+#### Features selection details:
 ```R
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
    "X, Y" and "Z".
