@@ -38,6 +38,7 @@ Script
 ===========
 
 #### The flow of the script
+```S
 * Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
 * Step 2: Merges data:
       * a. Test data: Under test folder, subject_test, y_test and X_test data merged into test_data data frame.
@@ -68,7 +69,7 @@ Script
       * This is the final tidy data set. Now, we have 180 rows and 68 columns.
 * Step 9: Write to file: 
       * Write this final tidy data set to a text file; final.txt.
-
+```
 
 #### Environment details
 Environment in which script has been developed, executed and verified.
