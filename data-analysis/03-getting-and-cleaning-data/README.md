@@ -39,10 +39,10 @@ Script
 
 #### The flow of the script
 ```S
-Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net.
+Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net and unzip it under data folder.
 Step 2: Merges data:
-      a. Test data: Under test folder, subject_test, y_test and X_test text files merged into "test_data" data frame.
-      b. Train data: Under train folder, subject_train, y_train and X_train text files merged into "train_data" data frame.
+      a. Test data: Under test folder, subject_test, y_test & X_test text files merged into "test_data" data frame.
+      b. Train data: Under train folder, subject_train, y_train & X_train text files merged into "train_data" data frame.
       c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame.
 Step 3: Column names: 
       Assign column names to this "all_data". 
@@ -55,7 +55,7 @@ Step 5: Descriptive activities:
       After this, assign descriptive names for each Activity. 
       Join "slice_data" and "activity" on 'activityId' and get "with_activities" data.
       'activity' column will now have the descriptive activities.
-      Here, one more column "activity" is added. So, the total columns are 69. 
+      Here, one more column 'activity' is added. So, the total columns are 69. 
 Step 6: Descritpvie variables: 
       Next, assign descriptive names for the variables. 
       This is achieved by replacing the short names to more descriptive ones and 
