@@ -5,12 +5,8 @@
 ## Notes: 	Getting and cleaning data                             ##
 ########################################################################
 
-library("data.table")
-library("plyr")
-library("reshape2")
-
 #setwd("~/Desktop/OTHERSonDESKTOP/CourseraCourses/DataAnalysis-courseraCourse/03-GettingAndCleaningData")
-#setwd("/Users/ambika/gitDir/coursera/data-analysis/03-getting-and-cleaning-data")
+#setwd("~/gitDir/coursera/data-analysis/03-getting-and-cleaning-data") 
 
 #############################################
 ## 	File and Folder section		   ##
@@ -36,6 +32,17 @@ if (!file.exists("data/UCI HAR Dataset")) {
 #############################################
 
 ##=========================================##
+## check_packages: 
+## checks if package exists
+## if it doesnt, then, installs that package.
+## parameter: package name
+##=========================================##
+check_install_packages <- function(x) {
+	message(c("checking package ",x))
+	if (!isPackageInstalled(x)) install.packages(x)
+}
+
+##=========================================##
 ## combine_data: combine train and test data.
 ## 1. combine subject, y and x of test and train
 ## 2. then, combine test and train data
@@ -45,8 +52,11 @@ combine_data <- function() {
 	sub_test = read.table("test/subject_test.txt")
 	y_test = read.table("test/y_test.txt")
 	x_test = read.table("test/X_test.txt",colClasses = "numeric")
-        ## combine - subject, y and x of "test"
+	## combine - subject, y and x of "test"
 	test_data = cbind(sub_test,y_test,x_test)
+	
+	## remove unwanted variables
+	rm(list=c("sub_test","y_test","x_test"))
 
 	## read train data
 	sub_train = read.table("train/subject_train.txt")
@@ -54,9 +64,12 @@ combine_data <- function() {
 	x_train = read.table("train/X_train.txt",colClasses = "numeric")
 	## combine - subject, y and x of "train"
 	train_data = cbind(sub_train,y_train,x_train)
+	
+	## remove unwanted variables
+	rm(list=c("sub_train","y_train","x_train"))
 
 	## combine test and train data
-	rbind(train_data,test_data) 
+	rbind(train_data,test_data)
 }
 
 ##=========================================##
@@ -107,9 +120,24 @@ variable_name_replacements <- function(x) {
 	tmpcolnames
 }
 
+
 #############################################
 ## 		   MAIN	       	           ##
 #############################################
+
+##=========================================##
+## Packages
+##=========================================##
+if (!is.element("R.utils", installed.packages())) install.packages("R.utils") 
+library("R.utils")
+
+check_install_packages("data.table")
+check_install_packages("plyr")
+check_install_packages("reshape2")
+
+library("data.table")
+library("plyr")
+library("reshape2")
 
 ##=========================================## 
 ## 1. Merge data 
@@ -173,6 +201,6 @@ write.table(final,file="final.txt",row.names=FALSE, col.names=TRUE, sep="\t", qu
 ############################################# 
 ##      End of the script - cleanup        ##
 ############################################# 
-#rm(list=ls())
+rm(list=ls())
 
 ########################################################################

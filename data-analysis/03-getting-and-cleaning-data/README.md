@@ -49,7 +49,7 @@ I have considered this characteristic for variable names
 Code book
 ===========
 The variables are of 2 types in this tidy data set: Categorical and ordinal.  
-Please refer to coodebook.md for more info. 
+Please refer to [coodebook.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/codebook.md) for more info. 
 
 
 Script
@@ -57,12 +57,12 @@ Script
 
 #### The flow of the script
 ```R
-Step 1: Downloads the raw file - "UCI HAR Dataset.zip[1]" file from the net and unzip it under data folder.
+Step 1: Downloads the raw file - "UCI HAR Dataset.zip"	[1] file from the net and unzip it under data folder.
         [Go to the "UCI HAR Dataset" folder, under data folder after unzip].
 Step 2: Merges data:
       a. Test:  Under test  folder, subject_test,  y_test  & X_test  text files merged into "test_data"  data frame.
       b. Train: Under train folder, subject_train, y_train & X_train text files merged into "train_data" data frame.
-      c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame.
+      c. Then, merge "test_data" and "train_data" data frame into "all_data" data frame, using rbind.
 Step 3: Column names: 
       Assign column names to this "all_data". 
       Column names are subject, activityId and the 561 values in features.txt. So, totally 563 columns.
@@ -73,7 +73,7 @@ Step 4: Extract columns:
 Step 5: Descriptive activities: 
       After this, assign descriptive names for each Activity.
       Extract activity_labels text file info in to "activity" data frame.
-      Join "slice_data" and "activity" on 'activityId' and get "with_activities" data.
+      Join and arrange "slice_data" and "activity" on 'activityId' and get "with_activities" data.
       'activity' column will now have the descriptive activities.
       Here, one more column 'activity' is added. So, the total columns are 69.
       NOTE: 'activityId' is yet retained so that the ordering of data can be on activityId instead of activity.
@@ -81,6 +81,7 @@ Step 6: Descriptive variables:
       Next, assign descriptive names for the variables. 
       This is achieved by replacing the short names to more descriptive ones and 
       also by eliminating repeated words or characters, paranthesis (), etc.
+      This is achieved by using gsub.
 Step 7: Calculate mean: 
       For the keys 'activityId, activity, subject', get the mean for each variable. 
       With 'melt' and 'dcast' functions, obtain this set of data. 
