@@ -3,9 +3,10 @@ Getting and cleaning data
 
 In the process of getting and cleaning data, there are several other files:
 
-1. Tidy data set. File: final.txt
-2. A code book: Describing each variable and its values in the tidy data set. File: codebook.md
-3. Script to generate the tidy data set from scratch. File: run_analysis.R
+1. Tidy data set. **File:** final.txt
+2. A code book: Describing each variable and its values in the tidy data set. **File:** codebook.md
+3. Script to generate the tidy data set from scratch. **File:** run_analysis.R
+
 
 Tidy data set
 ===========
@@ -43,7 +44,8 @@ Script
 
 #### The flow of the script
 ```R
-Step 1: Downloads the raw file; "UCI HAR Dataset.zip" file from the net and unzip it under data folder.
+Step 1: Downloads the raw file - "UCI HAR Dataset.zip" file from the net and unzip it under data folder.
+        [Go to the "UCI HAR Dataset" folder, under data folder after unzip].
 Step 2: Merges data:
       a. Test:  Under test  folder, subject_test,  y_test  & X_test  text files merged into "test_data"  data frame.
       b. Train: Under train folder, subject_train, y_train & X_train text files merged into "train_data" data frame.
