@@ -30,7 +30,6 @@ I have considered this characteristic for variable names
 ```
 
 
-
 Code book
 ===========
 Categorical and ordinal
@@ -45,30 +44,30 @@ Script
       * b. Train data: Under train folder, subject_train, y_train and X_train data merged into train_data data frame.
       * c. Then, merge test_data and train_data data frame into all_data data frame.
 * Step 3: Column names: 
-		Assign column names to this all_data. 
-		Column names are subject, activityId and the 561 values in features.txt. So, totally 563 columns.
+      * Assign column names to this all_data. 
+      * Column names are subject, activityId and the 561 values in features.txt. So, totally 563 columns.
 * Step 4: Extract columns: 
-		Now, of the 561 columns, extract columns with mean and standard deviation only. 
-		This amounts to 66 columns (from 561 columns). Plus subject and activity 2 columns, makes it 68 columns. 
-		The sliced_data will contain this data.
+      * Now, of the 561 columns, extract columns with mean and standard deviation only. 
+      * This amounts to 66 columns (from 561 columns). Plus subject and activity 2 columns, makes it 68 columns. 
+      * The sliced_data will contain this data.
 * Step 5: Descriptive activities: 
-		After this, assign descriptive names for each Activity. 
-		Join slice_data and activity on activityId and form with_activities data.
-		"activity" column will now have the descriptive activities.
-		Here, one more column "activity" is added. So, the total columns are 69. 
+      * After this, assign descriptive names for each Activity. 
+      * Join slice_data and activity on activityId and form with_activities data.
+      * "activity" column will now have the descriptive activities.
+      * Here, one more column "activity" is added. So, the total columns are 69. 
 * Step 6: Descritpvie variables: 
-		Next, assign descriptive names for the variables. 
-		This is achieved by replacing the short names to more descriptive ones and 
-		also by eliminating repeated words or characters, paranthesis (), etc.
+      * Next, assign descriptive names for the variables. 
+      * This is achieved by replacing the short names to more descriptive ones and 
+      * also by eliminating repeated words or characters, paranthesis (), etc.
 * Step 7: Calculate mean: 
-		For the keys "activityId, activity, subject", get the mean for each variable. 
-		With "melt" and "dcast" functions, obtain this set of data. 
-		Now, there are 180 rows (combi: 6 activities * 30 subjects = 180 rows) and 69 columns.
+      * For the keys "activityId, activity, subject", get the mean for each variable. 
+      * With "melt" and "dcast" functions, obtain this set of data. 
+      * Now, there are 180 rows (combi: 6 activities * 30 subjects = 180 rows) and 69 columns.
 * Step 8: Final tidy data set: 
-		Eliminate "activityId" and take the rest of the data. 
-		This is the final tidy data set. Now, we have 180 rows and 68 columns.
+      * Eliminate "activityId" and take the rest of the data. 
+      * This is the final tidy data set. Now, we have 180 rows and 68 columns.
 * Step 9: Write to file: 
-		Write this final tidy data set to a text file; final.txt.
+      * Write this final tidy data set to a text file; final.txt.
 
 
 #### Environment details
