@@ -12,8 +12,10 @@ Tidy data set
 
 0. Better readibility of entire data: This file can be opened with "MS Excel". This displays data in tabular format and thus making it better to read the data than opening it in any of the text pads.
 1. Tidy data set has a row with column names - subject, activity and the other 66 variable names.
-2. Then, each row represents each "subject and acitivity" combination and for each of these combination, mean is computed for every variable.
-3. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
+2. Then, each row represents each "acitivity and subject" combination and for each of these combination, mean is computed for every variable.
+3. Please note, the actual expectation from this excersise is to get "mean" for every variable for each "activity and subject" combination; irrespective of what the variable is about or how the variable values are derived in the raw data. Thus, the 66 variables are retained as-is it is not changed.
+4. Also, note that the variable names does not reflect final "mean" calculation in it. It retains "variable name" as-is. Please take a note of this. As it is all "mean" calculations, it is omitted. Please refer to the code book for more details on all the variables.
+5. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
 ```S
 For example 1:
 lowercase: frequencybodygyroscopejerkmagnitudestandarddeviation
@@ -32,7 +34,9 @@ I have considered this characteristic for variable names
 
 Code book
 ===========
-Categorical and ordinal
+The variables are of 2 types in this tidy data set: Categorical and ordinal
+Please refer to coodebook.md for more info. 
+
 
 Script
 ===========
@@ -56,7 +60,7 @@ Step 5: Descriptive activities:
       Join "slice_data" and "activity" on 'activityId' and get "with_activities" data.
       'activity' column will now have the descriptive activities.
       Here, one more column 'activity' is added. So, the total columns are 69.
-      **NOTE:** 'activityId' is yet retained so that the ordering of data can be on activityId instead of activity.
+      NOTE: 'activityId' is yet retained so that the ordering of data can be on activityId instead of activity.
 Step 6: Descritpvie variables: 
       Next, assign descriptive names for the variables. 
       This is achieved by replacing the short names to more descriptive ones and 
@@ -80,7 +84,7 @@ Environment in which script has been developed, executed and verified.
 * Platform: x86_64-apple-darwin10.8.0 (64-bit)
 
 #### Verification
-* This script has been run under different location (folders) to ensure it provides the same results; the same set of tidy data set.
+* This script has been executed under different location (folders) to ensure it provides the same results (the same tidy data set).
 * Also, executed every single line of command/block of command separately on R console and even this produced the same results. 
 * This script has been run with and without data folder; the average time take without "data" folder and zip file is "45" secs and with it takes around "15" secs.
 
