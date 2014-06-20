@@ -3,9 +3,9 @@ Getting and cleaning data
 
 In the process of getting and cleaning data, there are several other files:
 
-1. Tidy data set. **File:** final.txt
-2. A code book: Describing each variable and its values in the tidy data set. **File:** codebook.md
-3. Script to generate the tidy data set from scratch. **File:** run_analysis.R
+1. Tidy data set. **File:** `final.txt`
+2. A code book: Describing each variable and its values in the tidy data set. **File:** `codebook.md`
+3. Script to generate the tidy data set from scratch. `**File:** run_analysis.R`
 
 
 Tidy data set
