@@ -10,10 +10,12 @@ In the process of getting and cleaning data, there are several other files:
 ### Tidy data set
 1. Tidy data set has a row with column names - subject, activity and the other 66 variable names.
 2. Then, each row represents each "subject and acitivity" combination and for each of these combination, mean is computed for every variable.
-3. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better. 
-For example 1: frequencybodygyroscopejerkmagnitudestandarddeviation, frequencyBodyGyroscopeJerkmagnitudeStandarddeviation, frequency-body-gyroscope-jerkmagnitude-standarddeviation. 
-For example 2: frequencybodyaccelerometerjerkstandarddeviationY, frequencyBodyAccelerometerJerkStandarddeviationY, frequency-body-accelerometer-jerk-standarddeviation-Y.
-As readability is one of the characteristic for easy interpretation of data, I have considered this characteristic for variable names.
+3. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
+```S
+* For example 1: frequencybodygyroscopejerkmagnitudestandarddeviation, frequencyBodyGyroscopeJerkmagnitudeStandarddeviation, frequency-body-gyroscope-jerkmagnitude-standarddeviation. 
+* For example 2: frequencybodyaccelerometerjerkstandarddeviationY, frequencyBodyAccelerometerJerkStandarddeviationY, frequency-body-accelerometer-jerk-standarddeviation-Y.
+* As readability is one of the characteristic for easy interpretation of data, I have considered this characteristic for variable names.
+```
 4. Better readibility of entire data: Also, this file can be opened with "MS Excel". This displays data in tabular format and thus making it better to read the data than opening it in any of the text pads.
 
 ### Code book
