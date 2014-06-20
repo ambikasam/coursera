@@ -13,22 +13,25 @@ Also the "magnitude" of these three-dimensional signals were calculated using th
 We have derived/computed  "mean" and "standard derivation" for the above signal combinations.
 ```
 
-#### Variables and Features mapping:
-**VARIABLES**
-New variable name
-Old variable name(from features.txt)
-
-**FEATURES**
-Domain signals (time/frequency)
-body/gravity
-accelerometer/gyroscope
-jerk/jerk magnitude/magnitude
-computations(mean/standarddeviation)
-axials(X/Y/Z)
-
+#### Variables and Features mapping:   
+The main categories of the headers in Variable and features mapping file is as given below.  
+  
+**VARIABLES**  
+New variable name  
+Old variable name(from features.txt)  
+  
+**FEATURES**  
+Domain signals (time/frequency)  
+body/gravity  
+accelerometer/gyroscope  
+jerk/jerk magnitude/magnitude  
+computations(mean/standarddeviation)  
+axials(X/Y/Z)  
+  
 [Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
+
 
 ### Variables details
 
-activity
-subject
+activity  
+subject  
