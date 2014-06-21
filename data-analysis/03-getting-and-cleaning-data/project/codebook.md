@@ -53,18 +53,17 @@ Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyr
 ```
 
 ##### 66 variables are:
-These 66 variables are dervied from these 6 basic combinations:
 ```R
-# t/f              -> time/frequency [Fast Fourier Transform (FFT)]  --> domain signals
-# X,Y or Z         -> X,Y and Z directions.                          --> 3 axial signals
-# Acc/Gyro         -> accelerometer/gyroscope
-# Body/Gravity     -> Body/Gravity
-# Jerk/JerkMag/Mag -> Jerk/Jerk Magnitude/Magnitude
-# mean()/std()     -> Mean value/Standard deviation
-```   
+# These 66 variables are dervied from these 6 basic combinations:
+ t/f              -> time/frequency [Fast Fourier Transform (FFT)]  --> domain signals
+ X,Y or Z         -> X,Y and Z directions.                          --> 3 axial signals
+ Acc/Gyro         -> accelerometer/gyroscope
+ Body/Gravity     -> body/gravity
+ Jerk/JerkMag/Mag -> jerk/jerkmagnitude/magnitude
+ mean()/std()     -> mean/standarddeviation
 
-66 variables
-```R
+
+# 66 variables are:
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
 time-body-accelerometer-mean-Z
