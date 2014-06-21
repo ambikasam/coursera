@@ -139,6 +139,8 @@ Refer to [Variable and features mapping file](https://github.com/ambikasam/cours
 
 Data
 ==========
+For intro to raw data, please refer to [Raw data section in README.md](https://github.com/ambikasam/coursera/tree/master/data-analysis/03-getting-and-cleaning-data/project#raw-data).
+
 The raw data files[1] considered for "tidying the data set":  
 * Test data with [under test folder]
    * subject
@@ -150,7 +152,7 @@ The raw data files[1] considered for "tidying the data set":
    * X  
 which together had 6 activities, 30 subjects and 561 variables.  
 
-`For more info, please refer to the above "Variables" section on "activity and subject" and "feature selection".`  
+`For more info, please refer to the above "Variables" section on "activity and subject" and "feature selection".`
 
 ```R
 X train      :    7352 rows and 561 columns
@@ -174,7 +176,7 @@ This has been achieved by processing the raw data through as set of tranformers.
 
 Transformations
 ==========
-The transformations of raw data to tidy data set is captured in [README.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/README.md) file, under section "Script > The flow of the script".  
+The transformations of raw data to tidy data set is captured here - [section "Script > The flow of the script" in README.md](https://github.com/ambikasam/coursera/tree/master/data-analysis/03-getting-and-cleaning-data/project#the-flow-of-the-script).  
 Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set. After processing this file, there will be a new file generated called "final.txt". This file will contain the final tidy data set.
 
 References
