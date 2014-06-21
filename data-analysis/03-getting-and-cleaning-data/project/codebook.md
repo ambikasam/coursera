@@ -145,7 +145,7 @@ The raw data files considered for "tidying the data set":
 * Train data with [under train folder]
    * subject
    * y
-   * X
+   * X  
 which together had 6 activities, 30 subjects and 561 variables.  
 Please refer to the above "Variables" section on more info on "activity and subject" and "feature selection".  
 
