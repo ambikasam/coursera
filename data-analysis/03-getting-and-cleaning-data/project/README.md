@@ -117,7 +117,7 @@ This describes the structure and functions in the script.
    2. Extract mean and standard deviation variables
    3. Descriptive activities
    4. Descriptive variable names
-   5. independent tidy data set
+   5. Independent tidy data set
    End of script - cleanup
 ```
 

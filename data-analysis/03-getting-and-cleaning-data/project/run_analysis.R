@@ -168,7 +168,7 @@ rm(sliced_data)
 colnames(with_activities) <- variable_name_replacements(with_activities)
 
 ##=========================================## 
-## 5. independent tidy data set 
+## 5. Independent tidy data set 
 ##      with the average(mean) of each variable 
 ##	for each activity and subject combination
 ##=========================================## 
