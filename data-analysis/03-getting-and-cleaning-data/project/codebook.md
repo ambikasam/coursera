@@ -19,8 +19,8 @@ Variables
 The experiments have been carried out with a group of "30" volunteers within an age bracket of 19-48 years.
 Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 ```
-**activity**  This comprises of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-**subject**   This comprises of those 30 volunteers. 1 to 30 values assigned.
+**activity**  This comprises of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING  
+**subject**   This comprises of those 30 volunteers. 1 to 30 values assigned.  
 
 ##### other 66 variables
 ###### Features selection:
