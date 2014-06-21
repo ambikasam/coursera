@@ -22,7 +22,12 @@ Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNS
 **activity**  This comprises of 6 activities: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`  and `LAYING`  
 **subject**   This comprises of those 30 volunteers. `1 to 30 values assigned.`  
 
-#### other 66 variables
+#### other 66 variables  
+
+**Points to be consider**  
+1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.
+1. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.
+
 ##### Features selection:
 ```R
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
@@ -37,17 +42,28 @@ This forms the complete set of feature selection (variables) for this data clean
 ```
 
 ##### Variables and Features mapping:   
-This section shows the correlation between the features and the variables.  
+This section shows the correlation between the features and the variables, which describes what each variable comprises off.  
 
 Refer to [Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
 
 ```R
 Headers with `New variable name` and `Old variable name(from features.txt)` are "VARIABLES"
-Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyroscope`, `jerk/jerk magnitude/magnitude`,
-`computations(mean/standarddeviation)` and `axials(X/Y/Z)` are "FEATURES"
+Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyroscope`, 
+`jerk/jerk magnitude/magnitude`, `computations(mean/standarddeviation)` and `axials(X/Y/Z)` are "FEATURES"
 ```
 
 ##### 66 variables are:
+These 66 variables are dervied from these 6 basic combinations:
+```R
+# t/f              -> time/frequency [Fast Fourier Transform (FFT)]  --> domain signals
+# X,Y or Z         -> X,Y and Z directions.                          --> 3 axial signals
+# Acc/Gyro         -> accelerometer/gyroscope
+# Body/Gravity     -> Body/Gravity
+# Jerk/JerkMag/Mag -> Jerk/Jerk Magnitude/Magnitude
+# mean()/std()     -> Mean value/Standard deviation
+```   
+
+66 variables
 ```R
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
@@ -120,6 +136,29 @@ frequency-body-gyroscope-jerkmagnitude-standarddeviation
 
 Data
 ==========
+The raw data comprised of  
+* Test data with
+   * subject
+   * y
+   * x
+* Train data with
+   * subject
+   * y
+   * x 
+which together had 6 activities, 30 subjects and 561 variables.
+
+  
+
+### Details
+X train data: 	(7352 * 561) 561 columns and 7352 rows
+y train data: 	(7352 * 1  )   1 column  and 7352 rows  [1-6 values]; these are activityId labels
+subject_train:	(7352 * 1  )   1 column  and 7352 rows  [1-30 values]; these are subjects who performed in the window slot 1-30
+X test data:  	(2947 * 561) 561 columns and 2947 rows 
+y test data:  	(2947 * 1  )   1 column  and 2947 rows  [1-6 values]; these are activityId labels
+subject_test:	(2947 * 1  )   1 column  and 2947 rows  [1-30 values]; these are subjects who performed in the window slot 1-30 
+
+The final tidy data set has been processed to have a new set of data with, 6 activities, 30 subjects and 66 variables.  
+For each combination of these activities and subjects (6 * 30 = 180)
 
 
 Transformations
