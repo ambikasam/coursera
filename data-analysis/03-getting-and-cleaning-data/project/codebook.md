@@ -155,15 +155,18 @@ y train      :    7352 rows and   1 column   [1-6 values]; these are activityId 
 subject_train:    7352 rows and   1 column   [1-30 values]; these are subjects who performed in the window slot 1-30
 X test       :    2947 rows and 561 columns 
 y test       :    2947 rows and   1 column   [1-6 values]; these are activityId labels
-subject_test :    2947 rows and   1 column   [1-30 values]; these are subjects who performed in the window slot 1-30 
+subject_test :    2947 rows and   1 column   [1-30 values]; these are subjects who performed in the window slot 1-30
 ```  
 
-Out of 561 variables, only mean and std (standard deviation) measurements are considered for the final tidy data set. Thus, it is 66 variables in the final data set.
+In raw data, there were 7352 (train) + 2947 (test)    = 10299 rows.  
+In raw data, there were 561 (X) + 1 (y) + 1 (subject) =   563 columns.  
+Out of 561 variables, only mean and std (standard deviation) measurements are considered for the final tidy data set. Thus, it is 66 variables in the final data set.  
+
 The final tidy data set has been processed to have a new set of data with, 6 activities, 30 subjects and 66 variables.  
 For each combination of these activities and subjects (6 * 30 = 180), there is mean calculated for every 66 variable.  
 Thus, the final data has 66 + 2 = 68 columns and 180 rows.  
 
-This has been achieved by processing the raw data through as set of tranformers. Please refer to "Transformations" sectin for more info on this.
+This has been achieved by processing the raw data through as set of tranformers. Please refer to "Transformations" section for more info on this.
 
 
 Transformations
