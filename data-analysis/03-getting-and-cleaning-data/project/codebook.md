@@ -1,25 +1,29 @@
 Code book for "getting and cleaning data"
 ==========
-This code book would describe the variables, the data, and any transformations or work that is performed to clean up the data
+
+This code book would describe
+* the variables,
+* the data, and
+* any transformations or work that is performed to clean up the data  
 
 Variables
 ==========
 
 ### Column headers
-#### Info 
+* activity,
+* subject,
+* And the other 66 variables.
+
+#### activity and subject 
 ```R
 The experiments have been carried out with a group of "30" volunteers within an age bracket of 19-48 years.
 Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 ```
-#### headers
-activity  
-		This comprises of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-subject   
-		This comprises of those 30 volunteers. 1 to 30 values assigned.
-And the other 66 variables.  This is detailed out in the below section.
+**activity**  This comprises of six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+**subject**   This comprises of those 30 volunteers. 1 to 30 values assigned.
 
-#### 66 variables
-##### Features selection details:
+##### other 66 variables
+###### Features selection:
 ```R
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
    "X, Y" and "Z".
@@ -32,18 +36,19 @@ We have derived/computed  "mean" and "standard derivation" for the above signal 
 This forms the complete set of feature selection (variables) for this data cleaning process.
 ```
 
-##### Variables and Features mapping:   
+###### Variables and Features mapping:   
 This section shows the correlation between the features and the variables.  
-  
-The main categories of the headers in Variable and features mapping file are as given below.  
+
+Refer to [Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
+
 ```R
-"VARIABLES": New variable name, Old variable name(from features.txt)
-"FEATURES" : Domain signals (time/frequency), body/gravity, accelerometer/gyroscope, jerk/jerk magnitude/magnitude, computations(mean/standarddeviation), axials(X/Y/Z)
+Headers with `New variable name` and `Old variable name(from features.txt)` are "VARIABLES"
+Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyroscope`, `jerk/jerk magnitude/magnitude`,
+`computations(mean/standarddeviation)` and `axials(X/Y/Z)` are "FEATURES"
 ```
 
-[Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
 
-##### Features
+###### 66 variables are:
 ```R
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
