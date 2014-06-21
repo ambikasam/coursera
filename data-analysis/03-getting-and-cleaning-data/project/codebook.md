@@ -42,7 +42,10 @@ We have derived/computed  "mean" and "standard derivation" for the above signal 
 This forms the complete set of feature selection (variables) for this data cleaning process.
 ```
 
-### 66 variables
+### 66 variables   
+
+**Range of values:** The range of values for these variables are between -1 to 1.  
+
 ```R
 'These 66 variables are dervied from these 6 basic combinations:
  t/f              -> time/frequency [Fast Fourier Transform (FFT)]  --> domain signals
