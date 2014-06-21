@@ -25,12 +25,12 @@ Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNS
 ## other 66 variables  
 
 **Points to be consider**  
-1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.
+1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.  
 1. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.
 
 ### Features selection:
 ```R
-Raw data's feature selection details:
+'Raw data features selection details:
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
    "X, Y" and "Z".
 The time domain signals were captured and finally a Fast Fourier Transform (FFT) was applied to some of these 
@@ -54,6 +54,7 @@ This forms the complete set of feature selection (variables) for this data clean
 
 
 # 66 variables are:
+'NOTE: naming convention followed for variable names is that all letters are in lower case and a dash in-between words of the variables, for better readability.
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
 time-body-accelerometer-mean-Z
@@ -172,5 +173,5 @@ This has been achieved by processing the raw data through as set of tranformers.
 Transformations
 ==========
 The transformations of raw data to tidy data set is captured in [README.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/README.md) file, under section "Script > The flow of the script". Please refer to this.  
-Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set.
+Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set. After processing this file, there will be a new file generated called "final.txt". This file will contain the final tidy data set.
 
