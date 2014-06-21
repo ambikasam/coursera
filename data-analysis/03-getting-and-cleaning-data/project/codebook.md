@@ -54,8 +54,7 @@ This forms the complete set of feature selection (variables) for this data clean
 
 
 # 66 variables are:
-'NOTE: naming convention followed for variable names is that all letters are in lower case 
-''and a dash in-between the words of the variable names, for better readability.
+'NOTE: naming convention: all letters are in lower case and a dash in-between the words, for better readability.
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
 time-body-accelerometer-mean-Z
@@ -149,7 +148,8 @@ The raw data files considered for "tidying the data set":
    * y
    * X  
 which together had 6 activities, 30 subjects and 561 variables.  
-`Please refer to the above "Variables" section on more info on "activity and subject" and "feature selection".`  
+
+`'For more info, please refer to the above "Variables" section on "activity and subject" and "feature selection".`  
 
 ```R
 X train      :    7352 rows and 561 columns
