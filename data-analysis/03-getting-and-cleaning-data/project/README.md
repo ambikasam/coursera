@@ -57,7 +57,7 @@ Script
 
 #### The flow of the script
 ```R
-'Please note that initially, the package checks, installation and loading is all complete.
+'Initially, the package checks, installation and loading is all complete. After this these are the following steps: 
 Step 1: Downloads the raw file - "UCI HAR Dataset.zip"[1] file from the net and unzip it under data folder.
         [Go to the "UCI HAR Dataset" folder, under data folder after unzip].
 Step 2: Merges data:
