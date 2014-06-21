@@ -29,7 +29,7 @@ Tidy data set
 2. Then, each row represents each "acitivity and subject" combination and for each of these combination, mean is computed for every variable.
 3. Please note, the actual expectation from this excersise is to clean the raw data and get "average" of every variable for each "activity and subject" combination. Thus, the 66 variables are retained as-is it is not changed (did not manipulate to slice it further down into different variables, etc.). 
 4. Also, note that the variable names does not reflect final "mean" calculation in it. It retains "variable name" as-is. Please take a note of this. Mention of mean in variable name is omitted, as all the variables are "mean" calculations. Please refer to the code book for more details on all the variables.
-5. Exception: If the tidy data set variable names are all in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
+5. Exception: If the tidy data set variable names are all only in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
 
 ```S
 For example 1:
@@ -95,6 +95,27 @@ Step 9: Write to file:
       Write this final tidy data set to a text file; final.txt.
 Finally, clean up the workspace by removing all the other variables in workspace.
 NOTE: Intermittently, the unwanted variables are removed off the workspace.
+```
+
+#### Functions/Blocks in Script
+```R
+This describes the structure and functions in the script.
+'Functions:
+1. check_install_packages     : checks if package exists, if not, it installs the given package to this function as parameter.
+2. combine_data               : merges test and train data.
+3. variable_name_replacements : replace older values with descriptive and meaningful variable names.
+
+'Blocks of code:
+1. File and Folders
+2. Functions
+3. Main
+   0. Packages
+   1. Merge data
+   2. Extract mean and standard deviation variables
+   3. Descriptive activities
+   4. Descriptive variable names
+   5. independent tidy data set
+   End of script - cleanup
 ```
 
 #### Execution of the script  

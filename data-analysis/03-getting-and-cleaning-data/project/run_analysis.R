@@ -32,10 +32,10 @@ if (!file.exists("data/UCI HAR Dataset")) {
 #############################################
 
 ##=========================================##
-## check_packages: 
+## check_install_packages: 
 ## checks if package exists
 ## if it doesnt, then, installs that package.
-## parameter: package name
+## parameter: package_name
 ##=========================================##
 check_install_packages <- function(x) {
 	message(c("checking package ",x))
@@ -115,7 +115,7 @@ variable_name_replacements <- function(x) {
 #############################################
 
 ##=========================================##
-## Packages
+## 0. Packages
 ##=========================================##
 if (!is.element("R.utils", installed.packages())) install.packages("R.utils",repos = "http://cran.us.r-project.org") 
 library("R.utils")

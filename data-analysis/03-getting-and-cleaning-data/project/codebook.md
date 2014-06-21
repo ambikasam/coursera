@@ -9,7 +9,7 @@ This code book would describe
 Variables
 ==========
 
-### Column header are:
+### Column headers are:
 * activity,
 * subject,
 * And the other 66 variables.
@@ -56,7 +56,7 @@ This forms the complete set of feature selection (variables) for this data clean
 NOTE: "Naming Convention:" All letters are in lower case and a dash in-between the words, for better readability.
 The actual expectation from this excersise is to clean the raw data and get "average" of every 66 variable for 
 each "activity and subject" combination. Thus, the 66 variables are retained as-is it is not changed 
-(did not manipulate to slice it further down into different variables, etc.).
+(did not manipulate by slicing it further down into different variables, etc.).
 
 '66 variables are:
 time-body-accelerometer-mean-X
