@@ -57,7 +57,7 @@ Script
 
 #### The flow of the script
 ```R
-Step 1: Downloads the raw file - "UCI HAR Dataset.zip"	[1] file from the net and unzip it under data folder.
+Step 1: Downloads the raw file - "UCI HAR Dataset.zip"[1] file from the net and unzip it under data folder.
         [Go to the "UCI HAR Dataset" folder, under data folder after unzip].
 Step 2: Merges data:
       a. Test:  Under test  folder, subject_test,  y_test  & X_test  text files merged into "test_data"  data frame.

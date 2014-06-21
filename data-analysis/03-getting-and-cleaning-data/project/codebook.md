@@ -139,7 +139,7 @@ Refer to [Variable and features mapping file](https://github.com/ambikasam/cours
 
 Data
 ==========
-The raw data files considered for "tidying the data set":  
+The raw data files[1] considered for "tidying the data set":  
 * Test data with [under test folder]
    * subject
    * y
@@ -177,3 +177,6 @@ Transformations
 The transformations of raw data to tidy data set is captured in [README.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/README.md) file, under section "Script > The flow of the script".  
 Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set. After processing this file, there will be a new file generated called "final.txt". This file will contain the final tidy data set.
 
+References
+=========
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012  
