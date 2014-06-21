@@ -55,7 +55,7 @@ This forms the complete set of feature selection (variables) for this data clean
 
 # 66 variables are:
 'NOTE: naming convention followed for variable names is that all letters are in lower case 
-'and a dash in-between the words of the variable names, for better readability.
+''and a dash in-between the words of the variable names, for better readability.
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
 time-body-accelerometer-mean-Z
