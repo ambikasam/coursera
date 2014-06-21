@@ -9,7 +9,7 @@ This code book would describe
 Variables
 ==========
 
-# Column headers
+### Column header are:
 * activity,
 * subject,
 * And the other 66 variables.
@@ -30,6 +30,7 @@ Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNS
 
 ### Features selection:
 ```R
+Raw data's feature selection details:
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
    "X, Y" and "Z".
 The time domain signals were captured and finally a Fast Fourier Transform (FFT) was applied to some of these 
@@ -136,30 +137,37 @@ Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyr
 
 Data
 ==========
-The raw data comprised of  
-* Test data with
+The raw data files considered for "tidying the data set":  
+* Test data with [under test folder]
    * subject
    * y
-   * x
-* Train data with
+   * X
+* Train data with [under train folder]
    * subject
    * y
-   * x 
-which together had 6 activities, 30 subjects and 561 variables.
+   * X
+which together had 6 activities, 30 subjects and 561 variables.  
+Please refer to the above "Variables" section on more info on "activity and subject" and "feature selection".  
 
-  
+```R
+X train      :    7352 rows and 561 columns
+y train      :    7352 rows and   1 column   [1-6 values]; these are activityId labels
+subject_train:    7352 rows and   1 column   [1-30 values]; these are subjects who performed in the window slot 1-30
+X test       :    2947 rows and 561 columns 
+y test       :    2947 rows and   1 column   [1-6 values]; these are activityId labels
+subject_test :    2947 rows and   1 column   [1-30 values]; these are subjects who performed in the window slot 1-30 
+```  
 
-### Details
-X train data: 	(7352 * 561) 561 columns and 7352 rows
-y train data: 	(7352 * 1  )   1 column  and 7352 rows  [1-6 values]; these are activityId labels
-subject_train:	(7352 * 1  )   1 column  and 7352 rows  [1-30 values]; these are subjects who performed in the window slot 1-30
-X test data:  	(2947 * 561) 561 columns and 2947 rows 
-y test data:  	(2947 * 1  )   1 column  and 2947 rows  [1-6 values]; these are activityId labels
-subject_test:	(2947 * 1  )   1 column  and 2947 rows  [1-30 values]; these are subjects who performed in the window slot 1-30 
-
+Out of 561 variables, only mean and std (standard deviation) measurements are considered for the final tidy data set. Thus, it is 66 variables in the final data set.
 The final tidy data set has been processed to have a new set of data with, 6 activities, 30 subjects and 66 variables.  
-For each combination of these activities and subjects (6 * 30 = 180)
+For each combination of these activities and subjects (6 * 30 = 180), there is mean calculated for every 66 variable.  
+Thus, the final data has 66 + 2 = 68 columns and 180 rows.  
+
+This has been achieved by processing the raw data through as set of tranformers. Please refer to "Transformations" sectin for more info on this.
 
 
 Transformations
 ==========
+The transformations of raw data to tidy data set is captured in [README.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/README.md) file, under section "Script > The flow of the script". Please refer to this.  
+Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set.
+
