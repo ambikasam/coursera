@@ -29,18 +29,18 @@ Tidy data set
 2. Then, each row represents each "acitivity and subject" combination and for each of these combination, mean is computed for every variable.
 3. Please note, the actual expectation from this excersise is to clean the raw data and get "average" of every variable for each "activity and subject" combination. Thus, the 66 variables are retained as-is it is not changed (did not manipulate to slice it further down into different variables, etc.). 
 4. Also, note that the variable names does not reflect final "mean" calculation in it. It retains "variable name" as-is. Please take a note of this. Mention of mean in variable name is omitted, as all the variables are "mean" calculations. Please refer to the code book for more details on all the variables.
-5. Exception: If the tidy data set variable names are all only in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash in it. Thus, retained variable name with dash which can be read better.
+5. Exception: If the tidy data set variable names are all only in lowercase, then it impacts readbility when compared to camelCase or variable name with a dash/hyphen [-] in it. Thus, retained variable name with dash/hyphen [-] which can be read better.
 
 ```S
 For example 1:
 lowercase: frequencybodygyroscopejerkmagnitudestandarddeviation
 camelCase: frequencyBodyGyroscopeJerkmagnitudeStandarddeviation
-dash     : frequency-body-gyroscope-jerkmagnitude-standarddeviation
+hyphen[-]: frequency-body-gyroscope-jerkmagnitude-standarddeviation
 
 For example 2: 
 lowercase: frequencybodyaccelerometerjerkstandarddeviationY
 camelCase: frequencyBodyAccelerometerJerkStandarddeviationY
-dash     : frequency-body-accelerometer-jerk-standarddeviation-Y 
+hyphen[-]: frequency-body-accelerometer-jerk-standarddeviation-Y 
 
 As readability is one of the characteristic for easy interpretation of data, 
 I have considered this characteristic for variable names

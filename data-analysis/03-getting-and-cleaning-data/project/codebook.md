@@ -56,7 +56,7 @@ This forms the complete set of feature selection (variables) for this data clean
  mean()/std()     -> mean/standarddeviation
 ```
 ```R
-NOTE: "Naming Convention:" All letters are in lower case and a dash in-between the words, for better readability.
+NOTE: "Naming Convention:" All letters are in lower case and a dash/hyphen [-] in-between the words, for better readability.
 The actual expectation from this excersise is to clean the raw data and get "average" of every 66 variable for 
 each "activity and subject" combination. Thus, the 66 variables are retained as-is it is not changed 
 (did not manipulate by slicing it further down into different variables, etc.).
