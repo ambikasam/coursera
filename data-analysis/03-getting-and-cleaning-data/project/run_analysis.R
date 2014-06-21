@@ -39,7 +39,7 @@ if (!file.exists("data/UCI HAR Dataset")) {
 ##=========================================##
 check_install_packages <- function(x) {
 	message(c("checking package ",x))
-	if (!isPackageInstalled(x)) install.packages(x)
+	if (!isPackageInstalled(x)) install.packages(x,repos = "http://cran.us.r-project.org")
 }
 
 ##=========================================##
@@ -78,18 +78,7 @@ combine_data <- function() {
 ##	parameters: x (a data frame with column names)
 ##=========================================##
 variable_name_replacements <- function(x) {
-	## Feature details ##
-	# t/f -> domain signals: time / frequency [Fast Fourier Transform (FFT)]
-	# X,Y or Z -> 3 axial signals: X,Y and Z directions.
-	# Acc/Gyro -> accelerometer/ gyroscope
-	# Body/Gravity
-	# Jerk/JerkMag/Mag -> Jerk/Jerk Magnitude / Magnitude
-	# mean()/std() -> Mean value / Standard deviation
-	##-----------------##
-
-	# Single line command for replacements of the variable names for better descriptive variable names.
-	#tmpcolnames <- gsub("std","standarddeviation",(gsub("std","standarddeviation",(gsub("\\(\\)","",(gsub("--","-",(gsub("-Mag","-magnitude-",(gsub("-Jerk","-jerk-",(gsub("-JerkMag","-jerkmagnitude-", gsub("-Gyro","-gyroscope-",(gsub("-Acc","-accelerometer-",(gsub("-Gravity","-gravity-",(gsub("-Body","-body-",(gsub("^f","frequency-",(gsub("^t","time-",(gsub("BodyBody","Body",colnames(x)))))))))))))))))))))))))))  
-
+	
 	# For better understanding, multiple line replacements (of the variable names for descriptive variable names).
 	tmpcolnames <- colnames(x)
 	tmpcolnames <- gsub("BodyBody","Body",tmpcolnames)
@@ -128,7 +117,7 @@ variable_name_replacements <- function(x) {
 ##=========================================##
 ## Packages
 ##=========================================##
-if (!is.element("R.utils", installed.packages())) install.packages("R.utils") 
+if (!is.element("R.utils", installed.packages())) install.packages("R.utils",repos = "http://cran.us.r-project.org") 
 library("R.utils")
 
 check_install_packages("data.table")

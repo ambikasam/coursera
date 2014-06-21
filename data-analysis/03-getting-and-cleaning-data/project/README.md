@@ -57,6 +57,7 @@ Script
 
 #### The flow of the script
 ```R
+'Please note that initially, the package checks, installation and loading is all complete.
 Step 1: Downloads the raw file - "UCI HAR Dataset.zip"[1] file from the net and unzip it under data folder.
         [Go to the "UCI HAR Dataset" folder, under data folder after unzip].
 Step 2: Merges data:
@@ -94,6 +95,10 @@ Step 9: Write to file:
 Finally, clean up the workspace by removing all the other variables in workspace.
 NOTE: Intermittently, the unwanted variables are removed off the workspace.
 ```
+
+#### Execution of the script  
+To execute this script in R console or R studio `source("run_analysis.R")`  
+To execute on the command line `R CMD BATCH run_analysis.R` and to check the execution process `vi run_analysis.Rout`  
 
 #### Environment details
 Environment in which script has been developed, executed and verified.
