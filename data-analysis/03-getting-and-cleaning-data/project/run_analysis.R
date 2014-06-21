@@ -6,7 +6,7 @@
 ########################################################################
 
 #setwd("~/Desktop/OTHERSonDESKTOP/CourseraCourses/DataAnalysis-courseraCourse/03-GettingAndCleaningData")
-#setwd("~/gitDir/coursera/data-analysis/03-getting-and-cleaning-data") 
+#setwd("~/gitDir/coursera/data-analysis/03-getting-and-cleaning-data")
 
 #############################################
 ## 	File and Folder section		   ##
