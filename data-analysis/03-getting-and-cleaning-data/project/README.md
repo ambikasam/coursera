@@ -101,9 +101,12 @@ NOTE: Intermittently, the unwanted variables are removed off the workspace.
 ```R
 This describes the structure and functions in the script.
 "Functions:"
-1. check_install_packages     : checks if package exists, if not, it installs the given package to this function as parameter.
+1. check_install_packages     : checks if package exists; if not, it installs the given package.
+                                parameter : package_name
 2. combine_data               : merges test and train data.
+                                parameter : NA
 3. variable_name_replacements : replace older values with descriptive and meaningful variable names.
+                                parameter : NA
 
 "Blocks of code:"
 1. File and Folders
