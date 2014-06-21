@@ -20,12 +20,10 @@ The experiments have been carried out with a group of "30" volunteers within an 
 Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 ```
 **activity**  This comprises of 6 activities: `WALKING`, `WALKING_UPSTAIRS`, `WALKING_DOWNSTAIRS`, `SITTING`, `STANDING`  and `LAYING`  
-**activity**  This comprises of 6 activities: `WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING  and LAYING.`  
-  
 **subject**   This comprises of those 30 volunteers. `1 to 30 values assigned.`  
 
-##### other 66 variables
-###### Features selection:
+#### other 66 variables
+##### Features selection:
 ```R
 The features selected for this database come from the "accelerometer" and "gyroscopic" with 3-axial raw signals 
    "X, Y" and "Z".
@@ -38,7 +36,7 @@ We have derived/computed  "mean" and "standard derivation" for the above signal 
 This forms the complete set of feature selection (variables) for this data cleaning process.
 ```
 
-###### Variables and Features mapping:   
+##### Variables and Features mapping:   
 This section shows the correlation between the features and the variables.  
 
 Refer to [Variable and features mapping file](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/variables-features-mapping.csv)
@@ -49,8 +47,7 @@ Headers with `Domain signals (time/frequency)`, `body/gravity, accelerometer/gyr
 `computations(mean/standarddeviation)` and `axials(X/Y/Z)` are "FEATURES"
 ```
 
-
-###### 66 variables are:
+##### 66 variables are:
 ```R
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
