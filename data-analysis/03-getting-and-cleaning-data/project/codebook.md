@@ -44,7 +44,7 @@ This forms the complete set of feature selection (variables) for this data clean
 
 ### 66 variables are:
 ```R
-' These 66 variables are dervied from these 6 basic combinations:'
+'These 66 variables are dervied from these 6 basic combinations:'
  t/f              -> time/frequency [Fast Fourier Transform (FFT)]  --> domain signals
  X,Y or Z         -> X,Y and Z directions.                          --> 3 axial signals
  Acc/Gyro         -> accelerometer/gyroscope
@@ -53,7 +53,7 @@ This forms the complete set of feature selection (variables) for this data clean
  mean()/std()     -> mean/standarddeviation
 
 
-' 66 variables are:'
+'66 variables are:'
 #NOTE: naming convention: all letters are in lower case and a dash in-between the words, for better readability.
 time-body-accelerometer-mean-X
 time-body-accelerometer-mean-Y
