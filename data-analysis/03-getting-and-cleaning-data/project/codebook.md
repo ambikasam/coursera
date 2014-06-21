@@ -20,14 +20,12 @@ The experiments have been carried out with a group of "30" volunteers within an 
 Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).
 ```
 **activity**  This comprises of 6 activities: 
-```R
-WALKING, 
-WALKING_UPSTAIRS, 
-WALKING_DOWNSTAIRS,
-```
-`SITTING,`  
-`STANDING,`  
-LAYING
+`WALKING`  
+`WALKING_UPSTAIRS`  
+`WALKING_DOWNSTAIRS`  
+`SITTING`  
+`STANDING`  
+`LAYING`  
   
 **subject**   This comprises of those 30 volunteers. `1 to 30 values assigned.`  
 
