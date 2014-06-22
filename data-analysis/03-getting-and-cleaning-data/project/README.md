@@ -106,7 +106,7 @@ This describes the structure and functions in the script.
 2. combine_data               : merges test and train data.
                                 parameter : NA
 3. variable_name_replacements : replace older values with descriptive and meaningful variable names.
-                                parameter : NA
+                                parameter : data_frame
 
 "Blocks of code:"
 1. File and Folders
