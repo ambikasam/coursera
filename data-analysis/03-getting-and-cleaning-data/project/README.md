@@ -4,7 +4,7 @@ Getting and cleaning data
 In the process of getting and cleaning data, there are several other files:
 
 1. Tidy data set. **File:** `final.txt`
-2. A code book: Describing each variable and its values in the tidy data set. **File:** `codebook.md`
+2. A codebook: Describing each variable and its values in the tidy data set. **File:** `codebook.md`
 3. Script to generate the tidy data set from scratch. **File:** `run_analysis.R` 
 
 
@@ -47,7 +47,7 @@ I have considered this characteristic for variable names
 ```
 
 
-Code book
+Codebook
 ===========
 The variables are of 2 types in this tidy data set: Categorical and ordinal.  
 Please refer to [coodebook.md](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/codebook.md) for more info. 
