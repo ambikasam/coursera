@@ -1,7 +1,7 @@
-Code book for "getting and cleaning data"
+Code book
 ==========
 
-This code book would describe
+This code book is for "getting and cleaning data". It would describe
 * the variables,
 * the data, and
 * any transformations or work that is performed to clean up the data  
@@ -24,9 +24,9 @@ Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNS
 
 ## other 66 variables  
 
-**Points to be consider**
-1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.
-1. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.
+**Points to be consider**  
+1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.  
+1. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.  
 
 ### Features selection
 ```R
@@ -184,7 +184,8 @@ This has been achieved by processing the raw data through as set of tranformers.
 Transformations
 ==========
 The transformations of raw data to tidy data set is captured here - [section "Script > The flow of the script" in README.md](https://github.com/ambikasam/coursera/tree/master/data-analysis/03-getting-and-cleaning-data/project#the-flow-of-the-script).  
-Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set. After processing this file, there will be a new file generated called "final.txt". This file will contain the final tidy data set. Refer to [`Tidy data set` section in README.md](https://github.com/ambikasam/coursera/tree/master/data-analysis/03-getting-and-cleaning-data/project#tidy-data-set)
+Also, [run_analysis.R](https://github.com/ambikasam/coursera/blob/master/data-analysis/03-getting-and-cleaning-data/project/run_analysis.R) is the script which tranforms the raw data (test and train data sets) to the final tiday data set. After processing this file, there will be a new file generated called "final.txt". This file will contain the final tidy data set.  
+Refer to [`Tidy data set` section in README.md](https://github.com/ambikasam/coursera/tree/master/data-analysis/03-getting-and-cleaning-data/project#tidy-data-set)
 
 References
 =========
