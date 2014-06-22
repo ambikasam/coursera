@@ -1,7 +1,7 @@
-Code book
+Codebook
 ==========
 
-This code book is for "getting and cleaning data". It would describe
+This codebook is for "getting and cleaning data". It would describe
 * the variables,
 * the data, and
 * any transformations or work that is performed to clean up the data  
