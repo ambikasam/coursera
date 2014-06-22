@@ -26,7 +26,7 @@ Each person performed "six" activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNS
 
 **Points to be consider**  
 1. For this excercise, for each of these 66 variables, mean has been computed and stored as part of tidy data set; irrespective of the variable derived value in raw data is mean or standard deviation.  
-1. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.  
+2. Under each of these variables only the averaged value for each variable is stored, i.e., mean; for each acitivity and subject combination. But the variable name do not reflect the final mean computation, it retains the variable name as-is.  
 
 ### Features selection
 ```R
